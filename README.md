@@ -90,7 +90,7 @@ export const upcomingTsSyntax = type({
 // runtime-specific syntax and builtin keywords with great error messages
 
 export const validationSyntax = type({
-	keywords: "email|uuid|creditCard|integer", // and many more
+	keywords: "email|uuid|creditCard|number.integer", // and many more
 	builtinParsers: "parse.date", // parses a Date from a string
 	nativeRegexLiteral: /@arktype\.io/,
 	embeddedRegexLiteral: "email&/@arktype\\.io/",
